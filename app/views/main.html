@@ -1,0 +1,8 @@
+<h1>Pick any number of cards</h1>
+<div class="card-holder">
+  <div class="card" ng-repeat="card in cards track by $index" ng-scope ng-class="{ active: card.selected }" ng-click="card.selected = !card.selected">{{ card.number }}</div>
+</div>
+
+<button class="btn-sum" ng-click="computeSum();">Get the sum!</button>
+
+<h2>Total: {{ sum.number }}</h2>

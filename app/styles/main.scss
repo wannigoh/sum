@@ -1,0 +1,65 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+  text-align: center;
+}
+
+h1 {
+  margin: 40px 0;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 72px;
+  text-align: center;
+  width: 200px;
+}
+
+
+// Card
+
+.card-holder {
+  display: block;
+  margin: 60px auto 40px;
+  text-align: center;
+  height: 250px;
+}
+
+.card {
+  @include transition(all 100ms ease-out);
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  display: inline-block;
+  line-height: 200px;
+  font-size: 70px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #555;
+  color: #fff;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+
+  &:hover {
+    background-color: #ad0018;
+  }
+
+  &.active {
+    top: 20px;
+    background-color: #ad0018;
+    color: #fff;
+  }
+}
+
+.btn-sum {
+  padding: 20px;
+  font-size: 30px;
+  display: block;
+  margin: 0 auto 60px;
+}
